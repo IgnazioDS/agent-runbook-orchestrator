@@ -1,0 +1,24 @@
+{
+  "slug": "agent-runbook-orchestrator",
+  "name": "Agent Runbook Orchestrator",
+  "category": "Automation",
+  "track": "Agents",
+  "stage": "Ready to build",
+  "summary": "A durable execution layer for AI-assisted operational runbooks with approvals, retries, and audit history.",
+  "problem": "Operational workflows break when LLM agents lack state, retry logic, and human checkpoints.",
+  "users": "Ops teams, founders, agencies, internal tooling teams",
+  "stack": [
+    "Python",
+    "FastAPI",
+    "PostgreSQL",
+    "Celery",
+    "Playwright"
+  ],
+  "why_now": "Teams want agent automation, but trust collapses without execution controls and observability.",
+  "mvp": [
+    "Define runbooks as step graphs",
+    "Pause for approval on risky actions",
+    "Persist run state and artifacts",
+    "Expose replay and audit views"
+  ]
+}
