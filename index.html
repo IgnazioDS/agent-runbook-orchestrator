@@ -1,0 +1,137 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Agent Runbook Orchestrator</title>
+    <meta name="description" content="A durable execution layer for AI-assisted operational runbooks with approvals, retries, and audit history." />
+    <meta name="theme-color" content="#1a1208" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="/styles.css" />
+    <style>
+      :root {
+        --bg: #1a1208;
+        --bg-alt: #24190d;
+        --panel: #322112;
+        --text: #fff8ed;
+        --muted: #d3c1a8;
+        --accent: #f59e0b;
+        --accent-alt: #fb7185;
+        --border: rgba(211, 193, 168, 0.18);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="page-shell">
+      <header class="hero">
+        <nav class="topbar">
+          <span class="brand">agent-runbook-orchestrator</span>
+          <div class="links">
+            <a href="https://github.com/IgnazioDS/agent-runbook-orchestrator">GitHub</a>
+            <a href="https://github.com/IgnazioDS/agent-runbook-orchestrator/blob/main/docs/architecture.md">Architecture</a>
+            <a href="https://github.com/IgnazioDS/agent-runbook-orchestrator/blob/main/docs/roadmap.md">Roadmap</a>
+          </div>
+        </nav>
+
+        <section class="hero-grid">
+          <div>
+            <p class="eyebrow">Shipping System</p>
+            <h1>Agent Runbook Orchestrator</h1>
+            <p class="lede">A durable execution layer for AI-assisted operational runbooks with approvals, retries, and audit history.</p>
+            <div class="hero-actions">
+              <a class="button primary" href="https://github.com/IgnazioDS/agent-runbook-orchestrator">Open Repository</a>
+              <a class="button secondary" href="https://github.com/IgnazioDS/agent-runbook-orchestrator/blob/main/README.md">Read Docs</a>
+            </div>
+          </div>
+
+          <aside class="card status-panel">
+            <div class="status-row">
+              <span>Status</span>
+              <strong>Ready to build</strong>
+            </div>
+            <div class="status-row">
+              <span>Category</span>
+              <strong>Automation</strong>
+            </div>
+            <div class="status-row">
+              <span>Track</span>
+              <strong>Agents</strong>
+            </div>
+            <div class="status-row">
+              <span>Audience</span>
+              <strong>Ops teams, founders, agencies, internal tooling teams</strong>
+            </div>
+          </aside>
+        </section>
+      </header>
+
+      <main>
+        <section class="grid two-up">
+          <article class="card narrative">
+            <p class="eyebrow">Problem</p>
+            <h2>Operational pain, made explicit.</h2>
+            <p>Operational workflows break when LLM agents lack state, retry logic, and human checkpoints.</p>
+          </article>
+
+          <article class="card narrative">
+            <p class="eyebrow">Why Now</p>
+            <h2>Built for a market that already feels the gap.</h2>
+            <p>Teams want agent automation, but trust collapses without execution controls and observability.</p>
+          </article>
+        </section>
+
+        <section class="section-head">
+          <p class="eyebrow">Core Capabilities</p>
+          <h2>Focused scope, credible surface area.</h2>
+        </section>
+        <section class="grid capabilities">
+          
+        <article class="card capability">
+          <span class="eyebrow">Capability 1</span>
+          <h3>Define runbooks as step graphs</h3>
+          <p>Designed as a production-facing workflow instead of a throwaway demo path.</p>
+        </article>
+
+        <article class="card capability">
+          <span class="eyebrow">Capability 2</span>
+          <h3>Pause for approval on risky actions</h3>
+          <p>Designed as a production-facing workflow instead of a throwaway demo path.</p>
+        </article>
+
+        <article class="card capability">
+          <span class="eyebrow">Capability 3</span>
+          <h3>Persist run state and artifacts</h3>
+          <p>Designed as a production-facing workflow instead of a throwaway demo path.</p>
+        </article>
+
+        <article class="card capability">
+          <span class="eyebrow">Capability 4</span>
+          <h3>Expose replay and audit views</h3>
+          <p>Designed as a production-facing workflow instead of a throwaway demo path.</p>
+        </article>
+        </section>
+
+        <section class="grid two-up lower">
+          <article class="card stack-panel">
+            <p class="eyebrow">Stack Direction</p>
+            <h2>Implementation posture</h2>
+            <ul class="stack-list">
+              <li>Python</li><li>FastAPI</li><li>PostgreSQL</li><li>Celery</li><li>Playwright</li>
+            </ul>
+          </article>
+
+          <article class="card command-panel">
+            <p class="eyebrow">Local Entry Points</p>
+            <h2>Minimal interface, easy to demo</h2>
+            <pre><code>uv run agent-runbook-orchestrator summary
+uv run agent-runbook-orchestrator capabilities
+uv run agent-runbook-orchestrator roadmap
+vercel deploy -y</code></pre>
+          </article>
+        </section>
+      </main>
+    </div>
+  </body>
+</html>
