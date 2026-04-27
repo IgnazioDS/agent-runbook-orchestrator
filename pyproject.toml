@@ -19,6 +19,10 @@ agent-runbook-orchestrator = "agent_runbook_orchestrator.cli:main"
 
 [tool.setuptools.packages.find]
 where = ["src"]
+# Scope discovery to the Python package only — the Next.js dashboard
+# also lives under src/ (src/app, src/components, src/lib, src/test) and
+# we don't want setuptools trying to import those as Python modules.
+include = ["agent_runbook_orchestrator*"]
 
 [tool.setuptools.package-data]
 agent_runbook_orchestrator = ["project.json"]
