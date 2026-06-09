@@ -35,6 +35,20 @@ EXCLUDE_DIRS = frozenset(
         "dist",
         "build",
         ".idea",
+        ".next",
+        "coverage",
+    }
+)
+
+# Generated / lock files are not authored source. Counting them inflates the
+# public `lines_of_code` telemetry, which the contract forbids.
+EXCLUDE_FILES = frozenset(
+    {
+        "package-lock.json",
+        "yarn.lock",
+        "pnpm-lock.yaml",
+        "tsconfig.tsbuildinfo",
+        "_telemetry_static.json",
     }
 )
 
@@ -45,6 +59,8 @@ def count_lines(root: Path) -> int:
         if not path.is_file():
             continue
         if any(part in EXCLUDE_DIRS for part in path.parts):
+            continue
+        if path.name in EXCLUDE_FILES:
             continue
         if path.suffix not in SOURCE_EXTS:
             continue

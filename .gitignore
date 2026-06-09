@@ -7,6 +7,9 @@ out/
 next-env.d.ts.bak
 tsconfig.tsbuildinfo
 
+# Test coverage reports
+coverage/
+
 # Node
 node_modules/
 package-lock.json
